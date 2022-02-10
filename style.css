@@ -1,0 +1,239 @@
+/* CREDITS TO THE FOLLOWING TUTORIALS :
+
+    https://helpx.adobe.com/dreamweaver/how-to/responsive-web-design-basics.html?playlist=/services/playlist.helpx/products:SG_DREAMWEAVER_1_1/learn-path:key-techniques/playlist:topic/set-header:make-a-website/en_us.json
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* ZEROING CODE -- ensures consistency across browsers */ 
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', 'Helvetica Neue',  'Helvetica', 'Arial', sans-serif;
+}
+
+/* FOR BIG TITLES -- ex The Valley's Sweetest Conference */
+h1 {
+    font-weight: 700;
+    font-size: 7vh;
+    margin-bottom: 2vh;
+
+}
+
+/* FOR SECTION HEADERS -- ex Featured Bakeries*/
+h2 {
+    font-weight: 600;
+    font-size: 5.5vh;
+    margin-bottom: 2vh;
+  
+}
+
+/* FOR SECTION DESCRIPTIONS */
+h3 {
+    font-weight: 400;
+    font-size: 3.25vh;
+    margin-bottom: 5vh;
+}
+
+
+p {
+    font-weight: 300;
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+
+
+/* specially for COUNTDOWN TO DULCEON */
+h4 {
+    font-weight: 500;
+    font-size: 3vh;
+    color: #FF0A0A;
+}
+
+.button {
+    border: 5px #FF0A0A solid;
+    background-color: #FF0A0A;
+    color: white;
+    /* padding: 8px 30px; */
+    padding: .5vh 2vh;
+    
+    border-radius: 5px;
+    text-decoration:none;
+    
+
+    /* margin: 2vh; */
+
+}
+
+
+
+
+.desk-only {
+    /* hides the images on mobile version */
+    display: none;
+} 
+
+.gray-section {
+    background-color: #FCFCFC;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    font-size: 20px;
+    padding: 5vh;
+}
+
+
+
+/* - mobile version */
+.style-logo {
+    /* center the logo */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+
+.style-nav ul {
+    list-style-type: none;
+
+}
+
+.style-nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* -- this helps set up the grid view */
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/* FOR ALL OF THE DIFFERENT SECTIONS */
+/* -- for the top banner */
+.top-banner {
+    background-color: white;
+    background-size: cover;
+    /* padding: top right bottom left */ 
+    /* padding: 20px 30px 50px 30px; */
+    padding: 2vh 5vh 10vh 5vh;
+    /* figure out how to decrease line height on mobile*/ 
+    text-align: center;
+}
+
+.countdown-box {
+    color: black;
+    /* padding: 30px 20px 60px; */
+    /* padding: 3vh 3vh 6vh 3vh; */
+
+    padding: 15vh 5vh 15vh 5vh;
+    text-align: center;
+}
+
+
+/* - FEATURED BAKERIES - */
+.featbakeries-box {
+    padding: 15vh 5vh 15vh 5vh;
+    text-align: center;
+}
+
+.featbakeries-box h1 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.featbakeries-box h2 {
+    margin-bottom: 1.5vh;
+
+}
+
+.featbakeries-box img {
+    box-sizing: border-box;
+    width: 25vh;
+    margin-bottom: 3vh;
+    clip-path: circle();
+
+}
+
+/* REVIEWS SECTION */
+.reviews-box {
+    padding: 15vh 5vh 15vh 5vh;
+    text-align: center; 
+}
+
+
+
+
+/* - tablet version */
+/* break point; only add anything that's new or that is overriding the previous verison */
+@media (min-width: 768px) { 
+    
+    .style-nav ul li {
+        /* show in one line rather than stacked */ 
+        display: inline-block 
+    }
+
+    .style-nav ul {
+        text-align: center;
+    }
+
+    .mobile-only {
+        display:none;
+    }
+
+}
+
+/* - desktop version */
+
+@media (min-width: 1024px) {
+
+    .style-logo {
+        /* moves the image to the left */
+        float: left;
+    }
+
+    .style-nav {
+        float: right;
+        font-size: 20px;
+    }
+
+    .vertical-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .desk-only {
+        display:block;
+    }
+
+}
+
+
+
+
+
+/* SARAS CSS */ 
