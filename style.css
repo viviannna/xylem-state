@@ -228,6 +228,7 @@ header {
     position: relative;
     width: 100%;
     height: 40vh;
+    margin-bottom: 3vh;
 
 }
 
@@ -262,12 +263,13 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
+    /* opacity: 0; */
 
 }
 
 .item-hover-overlay:hover {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 
@@ -334,6 +336,8 @@ header {
         justify-content: center;
         gap: 3vh;
         align-content: stretch;
+
+        margin-bottom: 3vh;
         
 
     }
@@ -371,6 +375,60 @@ header {
     /* ITEM-SECTION */
     .item-hover-container {
         width: 35%;
+        margin-bottom: 0;
+    }
+
+    iframe {
+        height: 70vh;
+
+    }
+
+    .item-hover-overlay {
+        opacity: 0;
+    }
+
+    .item-hover-overlay:hover {
+        opacity: 1;
+    }
+
+
+
+    /* TOP HEADING ROW */
+
+    .banner-img {
+        float:right;
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+
+
+    .banner-text{
+
+        float: left;
+        text-align: left;
+        width: 45%;
+        height: 100%;
+        margin-top: 10vh;
+
+
+    }
+    
+    .top-banner-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 7vh;
+        height: 60vh;
+
+        padding: 0vh 7vh 0vh 7vh;
+
+
+
+
+
     }
 
 } /* END OF DESKTOP VERSION */
