@@ -221,6 +221,57 @@ header {
 }
 
 
+/* ITEM-HOVER */ 
+
+.item-hover-container {
+
+    position: relative;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.item-hover-container p {
+    margin-bottom: 0;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    margin-top: 0;
+
+}
+
+.item-hover-img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.item-hover-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 97, 43, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+}
+
+.item-hover-overlay:hover {
+    opacity: 1;
+}
+
+
+
 
 
 
@@ -292,7 +343,7 @@ header {
     }
 
     .fun-fact-overlay {
-        border: #006400 4px solid;
+        border: #006400 .5vh solid;
         width: 100%;
 
         height: 50vh;
@@ -315,6 +366,12 @@ header {
         font-size: 2.5vh;
     }
     
+
+
+    /* ITEM-SECTION */
+    .item-hover-container {
+        width: 35%;
+    }
 
 } /* END OF DESKTOP VERSION */
 
