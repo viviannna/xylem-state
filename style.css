@@ -86,6 +86,7 @@ p {
 
 .gray-section {
     background-color: #f8f9fa;
+   
 }
 
 
@@ -115,7 +116,7 @@ header {
 
 .style-nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #006400;
     text-align: center;
     display: block;
     padding: 10px;
@@ -285,8 +286,51 @@ header {
 
 
 
+/* CIRCLE LIST ITEMS */
+
+.entire-list {
+    display: flex;
+    margin-left: 5vh;
 
 
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.circle-list-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: left;
+
+
+}
+
+.circle-list-row {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    
+
+}
+
+.circle-img img {
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    object-fit: cover;
+
+}
+
+.circle-text {
+    display: flex;
+    margin-top: .5vh;
+    margin-left: 2vh;
+    text-align: left;
+
+}
 
 
 /* - tablet version */
@@ -375,11 +419,11 @@ header {
     }
 
     h3 {
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
     
     p {
-        font-size: 2.5vh;
+        font-size: 3vh;
     }
     
 
@@ -428,6 +472,10 @@ header {
 
 
     }
+
+    .banner-text h3 {
+        font-size: 3vh;
+    }
     
     .top-banner-row {
         display: flex;
@@ -439,8 +487,10 @@ header {
 
 
 
+    }
 
-
+    .entire-list {
+        margin-left: 50vh;
     }
 
 } /* END OF DESKTOP VERSION */
